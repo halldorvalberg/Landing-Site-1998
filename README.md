@@ -1,34 +1,51 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Halldór Valberg's Landing Site
+
+Welcome to Halldór Valberg's landing site! This is a simple landing page built using the NEXT.js framework that contains links to various websites associated with Halldór Valberg. The site is deployed on Vercel and can be found at [1998.is](https://1998.is). 
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [License](#license)
+
+## Features
+- Links to Halldór Valberg's profiles on various websites.
+- Has fun css that makes the experience more enjoyable.
+- Is deployed on Vercel and can be found at [1998.is](https://1998.is).
+
 ## Getting Started
 
-First, run the development server:
+Clone the repository and install dependencies:
 
+```bash
+git clone https://github.com/halldorvalberg/Landing-Site-1998
+
+cd Landing-Site-1998
+
+npm install
+# or
+yarn install
+```
+
+## Usage
+
+After setting up the project, you can run it locally using the following command:
+    
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+The site is deployed on Vercel and can be found at [1998.is](https://1998.is).
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
