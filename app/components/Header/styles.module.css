@@ -1,0 +1,29 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.HeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.HeaderItem {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
