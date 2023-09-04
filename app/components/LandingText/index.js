@@ -28,7 +28,7 @@ export default function LandingText() {
         <div className={styles.textContainer}>
         <div className={styles.text}>
           <div className={styles.line}>
-            <div className={styles.word}> I'm </div>
+            <div className={styles.word}> I`&apos;`m </div>
             <div className={styles.word}> Halldór </div>
             <div className={styles.word}> Valberg </div>
 
