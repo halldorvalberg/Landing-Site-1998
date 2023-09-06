@@ -12,6 +12,8 @@
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
+    "nextjs": "^0.0.3",
+    "pocketbase": "^0.18.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^8.1.1",
