@@ -42,8 +42,8 @@ export default function Page() {
               <p className='ContactElement'>email: <a href='mailto:halldor.valberg@hotmail.com' target="_blank">halldor.valberg@hotmail.com</a></p>
               <p className='ContactElement'>phone: <a href='tel:003548666298'>00 354 866 6298</a></p>
               <p className='ContactElement'> <a href="https://www.instagram.com/halldorvalberg/" target="_blank">instagram</a> </p>
-              <p className='ContactElement'> linkedin </p>
-              <p className='ContactElement'> github </p>
+              <p className='ContactElement'> <a href="https://www.linkedin.com/in/halldor-valberg" target="_blank">linkedin</a> </p>
+              <p className='ContactElement'> <a href="https://github.com/halldorvalberg" target="_blank">github</a> </p>
             
             </div>
           </div>
