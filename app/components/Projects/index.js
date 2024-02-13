@@ -1,12 +1,14 @@
 import React from 'react';
-
+import styles from './styles.module.css';
 const Projects = () => {
-  return (
-    <div>
-      <h1>Projects</h1>
-      {/* Add your project content here */}
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <div className={styles.text}>
+                <p>Projects</p>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    );
 };
 
 export default Projects;

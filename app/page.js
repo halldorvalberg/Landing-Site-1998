@@ -2,6 +2,9 @@
 import React, { useEffect } from 'react';
 import NavigationBar from './components/NavigationBar';
 import Bio from './components/Bio';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Resume from './components/Resume';
 
 export default function Page() {
 
@@ -33,7 +36,7 @@ export default function Page() {
             </div>
 
             <div className='Navigation'>
-              <NavigationBar activeElement={activeElement} handleSelect={handleSelect} />
+              {/* <NavigationBar activeElement={activeElement} handleSelect={handleSelect} /> */}
             </div>
             <div className='ContactInfo'>
               <p className='ContactElement'>email: <a href='mailto:halldor.valberg@hotmail.com' target="_blank">halldor.valberg@hotmail.com</a></p>
@@ -50,6 +53,9 @@ export default function Page() {
           <div className='RightPannel'>
 
             {activeElement === 'Home' && <Bio />}
+            {activeElement === 'Projects' && <Projects />}
+            {activeElement === 'Skills' && <Skills />}
+            {activeElement === 'Resume' && <Resume />}
 
 
           </div>

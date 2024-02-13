@@ -1,10 +1,13 @@
 import React from 'react';
+import styles from './styles.module.css';
 
 const Skills = () => {
   return (
-    <div>
-      <h2>Skills</h2>
-      <p>This section will be updated with your skills.</p>
+    <div className={styles.container}>
+        <div className={styles.text}>
+            <p>Skills</p>
+            <p>Coming soon...</p>
+        </div>
     </div>
   );
 };

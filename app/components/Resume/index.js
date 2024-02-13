@@ -1,10 +1,13 @@
 import React from 'react';
+import styles from './styles.module.css'
 
 const Resume = () => {
   return (
-    <div>
-      <h1>Resume</h1>
-      {/* Add your resume content here */}
+    <div className={styles.container}>
+        <div className={styles.text}>
+            <p>Resume</p>
+            <p>Coming soon...</p>
+        </div>
     </div>
   );
 };
