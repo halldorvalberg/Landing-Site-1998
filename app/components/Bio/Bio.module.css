@@ -1,0 +1,9 @@
+.container{
+    position: relative;
+    height: auto;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    max-width: 20vh;
+    margin: auto 0 0 auto;
+    font: 200 16px "Inter", sans-serif;
+}

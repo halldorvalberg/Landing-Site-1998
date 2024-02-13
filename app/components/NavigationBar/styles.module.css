@@ -1,0 +1,66 @@
+/* We import Inter with font weight both 300 and 500 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+.navigationBar {
+  display: flex; 
+  width: 200px;
+  padding: 50px 100px 80px 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frame {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+}
+.navigationElement {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* All a tags under navigation element */
+.navigationElement a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navigationElementActive {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* We add an asterisk before the text in navigationElementActive */
+.navigationElementActive::before {
+  content: "*";
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+.navigationElementActive{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navigationElement:hover {
+  cursor: pointer;
+}
+
+.navigationElementActive:hover {
+  cursor: default
+}

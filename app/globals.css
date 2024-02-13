@@ -1,58 +1,145 @@
-:root {
-  /* We create some variables for our color palette */
-  --color-primary: #003049;
-  --color-secondary: #D62828;
-  --color-tertiary: #F77F00;
-  --color-quaternary: #FCBF49;
-  --color-quinary: #EAE2B7;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: black;
-  font-family: 'Rubik', sans-serif;
-  overflow: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
-
-#blob {
-  background: linear-gradient(120deg, var(--color-secondary), var(--color-tertiary), var(--color-quinary));
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  animation: rotate 20s infinite;
-  opacity: 0.8;
-
-  z-index: -2;
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
 }
 
-
-
-@keyframes rotate {
-  from {
-    rotate: 0deg;
-  }
-  
-  50% {
-    scale: 1 1.5;
-  }
-  
-  to {
-    rotate: 360deg;
-  }
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 1);
+  flex-grow: 1;
+  margin: 50px;
+  padding: 25px;
 }
 
-#blur {
+.Container {
+  display: flex; 
   height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  backdrop-filter: blur(100px);
 }
 
+.LeftPannel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.RightPannel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20px;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.TitleContent {
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right:auto;
+}
+
+#Title {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  letter-spacing: normal;
+}
+
+#Subtitle {
+  color: rgba(255, 255, 255, 1);
+  align-self: center;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.ContactInfo {
+  position: relative;
+  height: 200px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 100;
+  font-style: italic;
+  margin-top: auto;
+}
+
+.ContactInfo a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.RightPannel {
+  margin-top: 0;
+}
+
+/* For when the screen is smaller than 700px but bigger than 400 */
+@media (max-width: 700px) {
+  .MainContent {
+    margin: 25px;
+  }
+  .TitleContent {
+    margin: 0;
+  }
+  #Title {
+    font-size: 30px;
+  }
+  #Subtitle {
+    font-size: 15px;
+  }
+
+  .ContactInfo{
+    display: none;
+  }
+  .Container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* For when the screen is smaller than 400px */
+@media (max-width: 400px) {
+  .MainContent {
+    margin: 10px;
+  }
+  .Container {
+    display: relative;
+  }
+  .TitleContent {
+    margin: 0;
+  }
+  #Title {
+    font-size: 20px;
+  }
+  #Subtitle {
+    font-size: 10px;
+  }
+  .ContactInfo{
+    display: none;
+  }
+  .Container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,37 +1,62 @@
 "use client"
 import React, { useEffect } from 'react';
-
-import LandingText from './components/LandingText';
+import NavigationBar from './components/NavigationBar';
+import Bio from './components/Bio';
 
 export default function Page() {
 
+  // We create a state that we will store the currently selected navigation element in
+  const [activeElement, setActiveElement] = React.useState('Home');
+
+  // We create a function that will be called when a navigation element is clicked
+  const handleSelect = (element) => {
+    setActiveElement(element);
+  };
+
+  // We create a useEffect that will be called when the component is mounted
   useEffect(() => {
-    const blob = document.getElementById('blob');
-    document.addEventListener('mousemove', (e) => {
-      const { clientX, clientY } = e;
-      blob.animate([
-        { left: `${clientX}px`, top: `${clientY}px` }
-      ], { duration: 3000, fill: "forwards" });
-    });
-
-  }, []);
-
-  
-
-
+    // We set the title of the page to the active element
+    document.title = "Halldór Valberg - " + activeElement;
+  }, [activeElement]);
 
 
 
   return (
-    <div>
-      <div id='blob'></div>
-      <div id='blur'></div>
+    <div className='HomePage'>
+      <div className='MainContent'>
+        <div className="Container">
 
-      {/* I'm Halldór Valberg
-          Web & App Developer
-          Email Instagram Linkedin
-          halldor.valberg@hotmail.com  */}
-      <LandingText />
+          <div className='LeftPannel'>
+            <div className='TitleContent'>
+              <span id="Title"> Halldór Valberg </span>
+              <p id="Subtitle">App & Web Developer </p>
+            </div>
+
+            <div className='Navigation'>
+              <NavigationBar activeElement={activeElement} handleSelect={handleSelect} />
+            </div>
+            <div className='ContactInfo'>
+              <p className='ContactElement'>email: <a href='mailto:halldor.valberg@hotmail.com' target="_blank">halldor.valberg@hotmail.com</a></p>
+              <p className='ContactElement'>phone: <a href='tel:003548666298'>00 354 866 6298</a></p>
+              <p className='ContactElement'> <a href="https://www.instagram.com/halldorvalberg/" target="_blank">instagram</a> </p>
+              <p className='ContactElement'> linkedin </p>
+              <p className='ContactElement'> github </p>
+            
+            </div>
+          </div>
+
+
+
+          <div className='RightPannel'>
+
+            {activeElement === 'Home' && <Bio />}
+
+
+          </div>
+
+
+        </div>
+      </div>
     </div>
   );
 }
