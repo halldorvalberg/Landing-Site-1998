@@ -36,7 +36,7 @@ export default function Page() {
             </div>
 
             <div className='Navigation'>
-              {/* <NavigationBar activeElement={activeElement} handleSelect={handleSelect} /> */}
+              <NavigationBar activeElement={activeElement} handleSelect={handleSelect} />
             </div>
             <div className='ContactInfo'>
               <p className='ContactElement'>email: <a href='mailto:halldor.valberg@hotmail.com' target="_blank">halldor.valberg@hotmail.com</a></p>

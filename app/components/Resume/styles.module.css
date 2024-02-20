@@ -1,4 +1,4 @@
-.text {
+.Resume {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -17,4 +17,34 @@
     gap: 13px;
     margin: 0;
     padding: 0;
+}
+
+.CompanyTitle, .SchoolTitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+    margin: 0;
+}
+
+.Job, .EducationInfo {
+    padding-left: 15px;
+    /* We want to align text justify*/
+    text-align: justify;
+
+    /* We want the gap between span and p to be small
+    and the gap between p and p to be big */
+}
+
+
+ 
+.Job span:first-child {
+    font-weight: 400;
+}
+
+/* We want the second span in job to be italic */
+.Job span:nth-child(2) {
+    font-style: italic;
 }
