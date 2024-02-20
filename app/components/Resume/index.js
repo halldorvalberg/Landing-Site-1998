@@ -2,7 +2,7 @@
 
 import React, { use, useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import WorkComponent from './workComponent';
+import WorkComponent from './WorkComponent';
 import EducationComponent from './EducationComponent';
 // type Resume = {
 //     Work: {
