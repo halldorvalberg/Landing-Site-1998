@@ -11,12 +11,10 @@ import styles from './styles.module.css'
 function EducationComponent({ education }) {
 
     return (
-        <div className={styles.Education}>
-            <h2 className={styles.SchoolTitle}>{education.school}</h2>
-            <div className={styles.EducationInfo}>
-                <p className={styles.Degree}>{education.degree}</p>
-                <p className={styles.DegreeFinished}>Degree finished: {education.degreefinished}</p>
-            </div>
+        <div>
+            <span className={styles.EducationInfo}> {education.degree} from {education.school} </span>
+
+
         </div>
 
 

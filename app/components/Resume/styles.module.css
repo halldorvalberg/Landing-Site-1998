@@ -23,7 +23,7 @@
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     color: #FFF;
     margin: 0;
@@ -33,15 +33,17 @@
     padding-left: 15px;
     /* We want to align text justify*/
     text-align: justify;
-
+    margin-bottom: 0px;
     /* We want the gap between span and p to be small
     and the gap between p and p to be big */
+    font-size: 14px;
+
 }
 
 
  
 .Job span:first-child {
-    font-weight: 400;
+    font-weight: 200;
 }
 
 /* We want the second span in job to be italic */

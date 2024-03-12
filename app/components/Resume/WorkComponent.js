@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.css'
 
-function WorkComponent({ work }) {
+export default function WorkComponent({ work }) {
 
     console.log(work)
     return (
@@ -12,11 +12,10 @@ function WorkComponent({ work }) {
                 <div key={index} className={styles.Job}>
                     <span> {job.title} </span> 
                     <span> {job.starttime} - {job.endtime}</span>
-                    <p className={styles.JobDescription}>{job.description}</p>
+                    {/* <p className={styles.JobDescription}>{job.description}</p> */}
                 </div>
             ))}
         </div>
     );
 };
 
-export default WorkComponent;
