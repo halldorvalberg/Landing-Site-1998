@@ -5,6 +5,7 @@ import Bio from './components/Bio';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
+import Advertisements from './components/Advertisements';
 
 export default function Page() {
 
@@ -56,6 +57,7 @@ export default function Page() {
             {activeElement === 'Projects' && <Projects />}
             {activeElement === 'Skills' && <Skills />}
             {activeElement === 'Resume' && <Resume />}
+            {activeElement === 'Advertisements' && <Advertisements />}
 
 
           </div>
