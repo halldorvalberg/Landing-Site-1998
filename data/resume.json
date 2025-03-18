@@ -1,76 +1,82 @@
 {
     "resume": {
-        "work": [
+        "work_experience": [
             {
-                "company": "Verktaki",
-                "jobs": [
-                    {
-                        "title": "Verktaki",
-                        "starttime": "Jan 2023",
-                        "endtime": "May 2023",
-                        "description": "Vann að hönnun og þróun á veflausn fyrir KPMG sem lokaverkefni í B.Sc. námi við Háskólann í Reykjavík. Í verkefninu vann ég að þróun á fram- og bakendakerfi ásamt því að hafa yfirumsjón með Scrum-aðferðafræði og skipulagi verkefnisins. Verkefnið var unnið með þremur öðrum háskólanemum í B.Sc námi í tölvunarfræði við HR."
-                    }
+                "title": "Full-Stack Developer & Customer Service",
+                "company": "CEO HUXUN (HR Monitor)",
+                "duration": {
+                    "start": "May 2024",
+                    "end": "Present"
+                },
+                "description": [
+                    "Unnið er að þróun HR Monitor, SaaS kerfis fyrir mannauðsmælingar, sem er með það markmið að bæta starfsánægju starfsmanna.",
+                    "Sem full-stack forritari vin ég að hönnun og forritun með Angular, ASP.NET core og PostgresSQL.",
+                    "Ég leiði ýmis þróunarverkefni og tryggi að lausnir uppfylli þarfir notenda.",
+                    "Auk þess starfa ég í þjónustuveri fyrirtækisins og styð viðskiptavini við notkun kerfisins til að hámarka árangur mælinga.",
+                    "Ég leiði frumkvæðisþjónustuna, þar sem við veitum fyrirtækjum sérhæfðan og reglulegan stuðning við mælingar og úrvinnslu gagna."
                 ]
             },
             {
+                "title": "Vefhönnuður",
+                "company": "Sjáfstætt starfandi",
+                "duration": {
+                    "start": "August 2023",
+                    "end": "May 2024"
+                },
+                "description": [
+                    "Hanna og set upp vefsíður fyrir fyrirtæki eða einstaklinga sem sjálfstætt starfandi verktaki.",
+                    "Vinn með uppsetningar á WordPress síðum og forritun á sérhæfðum PHP einingum, og hönnun og þróun á veflausnum í JavaScript 'framework'um s.s. NextJS, Vue.js eða React Native."
+                ]
+            },
+            {
+                "title": "Starfsnemi",
                 "company": "KPMG ehf",
-                "jobs": [
-                    {
-                        "title": "Starfsnemi",
-                        "starttime": "Jan 2023",
-                        "endtime": "May 2023",
-                        "description": "Vann að hönnun og þróun á veflausn fyrir KPMG sem lokaverkefni í B.Sc. námi við Háskólann í Reykjavík. Í verkefninu vann ég að þróun á fram- og bakendakerfi ásamt því að hafa yfirumsjón með Scrum-aðferðafræði og skipulagi verkefnisins. Verkefnið var unnið með þremur öðrum háskólanemum í B.Sc námi í tölvunarfræði við HR."
-                    }
+                "duration": {
+                    "start": "January 2023",
+                    "end": "May 2023"
+                },
+                "description": [
+                    "Vann að hönnun og þróun á veflausn fyrir KPMG sem lokaverkefni í B.Sc námi við Háskólann í Reykjavík.",
+                    "Í verkefninu vann ég að þróun á fram- og bakendakerfi ásamt því að hafa yfirumsjón með Scrum-aðferðafræði og skipulagi verkefnisins.",
+                    "Verkefnið var unnið með þremur öðrum háskólanemum í B.Sc námi í tölvunarfræði við HR."
                 ]
             },
             {
+                "title": "Erindreki",
                 "company": "Bandalag íslenskra skáta",
-                "jobs": [
-                    {
-                        "title": "Erindreki",
-                        "starttime": "Nov 2021",
-                        "endtime": "Nov 2022",
-                        "description": "Vann að þeim markmiðum að efla skátastarf um land allt með áherslu á dagskrárgerð, fræðslu og viðburðarhald ásamt því að vinna að auglýsingum á starfi og þjálfun starfsfólks aðildarfélaga. Einnig sinnti ég vefsíðu bandalagsins, viðhaldi á búnaði og skátabúðinni."
-                    }
+                "duration": {
+                    "start": "November 2021",
+                    "end": "November 2022"
+                },
+                "description": [
+                    "Vann að þeim markmiðum að efla skátastarf um land allt með áherslu á dagskrárgerð, fræðslu og viðburðarhald ásamt því að vinna að auglýsingum á starfi og þjálfun starfsfólks aðildarfélaga.",
+                    "Einnig sinnti ég vefsíðu bandalagsins, viðhaldi á búnaði og skátabúðinni."
                 ]
             },
             {
-                "company": "Skátafélagið Svanir",
-                "jobs": [
-                    {
-                        "title": "Stjórnarformaður",
-                        "starttime": "Feb 2019",
-                        "endtime": "Now",
-                        "description": "Sem stjórnarformaður/félagsforingi skátafélagsins var ég ábyrgur fyrir starfi félagsins. Starfið fól í sér ábyrgð á að ráða og þjálfa starfsfólk og sjálfboðaliða til að leiða bæði sumar- og vetrarstarf félagsins sem þjónustar allt að 350 þátttakendur á ári. Einnig að sjá um samskipti við landssamtök, bæjarfélag og önnur félagasamtök í nærumhverfi félagsins."
-                    },
-                    {
-                        "title": "Foringi (leiðbeinandi)",
-                        "starttime": "Sep 2012",
-                        "endtime": "Now",
-                        "description": "Sem foringi ség ég um skipulag á viðburðum og vikulegri dagskrá fyrir einstaklinga í skátastarfi á aldrinum 7 til 25 ára. Ber ábyrgð á samskiptum við foreldra/forráðamenn, þjálfun sjálfboðaliða."
-                    }
+                "title": "Þjónustufulltrúi",
+                "company": "1819 - Nýr valkostur ehf.",
+                "duration": {
+                    "start": "August 2018",
+                    "end": "November 2019"
+                },
+                "description": [
+                    "Símsvörun fyrir 1819 varðandi upplýsingaleit og fyrir fyrirtæki sem kaupa þjónustu 1819."
                 ]
-            },
+            }
+        ],
+        "volunteer_experience": [
             {
-                "company": "1819 - Nýr valkostur",
-                "jobs": [
-                    {
-                        "title": "Þjónustufulltrúi",
-                        "starttime": "Aug 2018",
-                        "endtime": "Nov 2019",
-                        "description": "Hlutverk mitt var símsvaranir fyrir ýmis fyrirtæki, almenn upplýsingagjöf og tæknileg aðstoð við hug- og tæknibúnað."
-                    }
-                ]
-            },
-            {
-                "company": "Upplýsingaráð BÍS",
-                "jobs": [
-                    {
-                        "title": "Varaformaður",
-                        "starttime": "Apr 2018",
-                        "endtime": "2019",
-                        "description": "Sem varaformaður bar ég t.a.m. ábyrgð á margmiðlun Bandalags íslenskra skáta, útgefnu efni, fréttamiðlunum og samfélagsmiðlum félagsins."
-                    }
+                "title": "Stjórnarformaður",
+                "organization": "Skátafélagið Svanir",
+                "duration": {
+                    "start": "February 2019",
+                    "end": "September 2024"
+                },
+                "description": [
+                    "Sem stjórnarformaður/félagsforingi skátafélagsins var ég ábyrgur fyrir starfi félagsins.",
+                    "Starfið fól í sér ábyrgð á að ráða og þjálfa starfsfólk og sjálfboðaliða til að leiða bæði sumar- og vetrarstarf félagsins sem þjónustar allt að 350 þátttakendur á ári.",
+                    "Einnig að sjá um samskipti við landssamtök, bæjarfélag og önnur félagasamtök í nærumhverfi félagsins."
                 ]
             }
         ],
