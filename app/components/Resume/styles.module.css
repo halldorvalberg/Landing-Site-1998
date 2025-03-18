@@ -40,8 +40,37 @@
 
 }
 
+.Job p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+    color: #FFF;
+}
 
- 
+.Job ul {
+    margin: 5px 0 10px 20px;
+    padding: 0;
+    list-style-type: none; /* Remove the * from the list */
+}
+
+.Job ul li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #FFF;
+    position: relative;
+}
+
+.expandButton {
+    background: none;
+    border: none;
+    color: #00F;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
 .Job span:first-child {
     font-weight: 200;
 }
@@ -49,4 +78,32 @@
 /* We want the second span in job to be italic */
 .Job span:nth-child(2) {
     font-style: italic;
+}
+
+.ScrollContainer {
+    max-height: 100vh; /* Adjust as needed */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.ScrollContainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.EducationInfo {
+    /* Remove or adjust padding-left to align with other sections */
+    padding-left: 0;
+    text-align: justify;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.SchoolTitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 5px;
 }

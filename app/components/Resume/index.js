@@ -1,60 +1,80 @@
 'use client'
+import React from 'react'
+import resumeData from '../../../data/resume.json'
+import styles from './styles.module.css'
 
-import React, { use, useEffect, useState } from 'react';
-import styles from './styles.module.css';
-import WorkComponent from './WorkComponent';
-import EducationComponent from './EducationComponent';
-// type Resume = {
-//     Work: {
-//         Company: String,
-//         Jobs: {
-//             Title: String,
-//             Description: String,
-//             StartTime: String,
-//             EndTime: String
-//         }[]
-//     },
-//     Education: {
-//         School: String,
-//         Degree: String,
-//         DegreeFinished: String
-//     }
-// }
+function Resume() {
 
-export default function Resume() {
+    const resume = resumeData.resume || {}
+    console.log(resume)
 
-    // We create a state that we will store the resume data in
-    const [resume, setResume] = useState(null);
+    const workExperienceData = resume?.work_experience || []
+    const workExperience = workExperienceData.length ? (
+        workExperienceData.map((work) => (
+            <div key={work.company} className={styles.Job}>
+                <span>{work.company}</span>
+                <span>{work.title}</span>
+                <p>{work.duration.start} - {work.duration.end}</p>
+                <ul>
+                    {work.description.map((line, index) => (
+                        <li key={index}>{line}</li>
+                    ))}
+                </ul>
+            </div>
+        ))
+    ) : (
+        <p>No work experience available.</p>
+    )
 
-    // We create a useEffect that will be called when the component is mounted
-    useEffect(() => {
-        // We fetch the data from the api
-        fetch('/api/resume')
-            .then(response => response.json())
-            .then(data => setResume(data.resume))
-    }, []);
+    const volunteerExperienceData = resume?.volunteer_experience || []
+    const volunteerExperience = volunteerExperienceData.length ? (
+        volunteerExperienceData.map((volunteer) => (
+            <div key={volunteer.organization} className={styles.Job}>
+                <span>{volunteer.organization}</span>
+                <span>{volunteer.role}</span>
+                <p>{volunteer.duration.start} - {volunteer.duration.end}</p>
+                <ul>
+                    {volunteer.description.map((line, index) => (
+                        <li key={index}>{line}</li>
+                    ))}
+                </ul>
+            </div>
+        ))
+    ) : (
+        <p>No volunteer experience available.</p>
+    )
 
-    // If the data is not loaded we return a loading message
-    if (!resume) return <div>Loading...</div>
+    const educationData = resume?.education || []
+    const education = educationData.length ? (
+        educationData.map((edu) => (
+            <div key={edu.school} className={styles.EducationInfo}>
+                <span className={styles.SchoolTitle}>{edu.school}</span>
+                <span>{edu.degree}</span>
+                <p>Finished: {edu.degreefinished}</p>
+            </div>
+        ))
+    ) : (
+        <p>No education information available.</p>
+    )
 
-    // If the data is loaded we return the resume
     return (
-        <div className={styles.Resume}>
-            <h1>Resume</h1>
-
-            <h2>Work</h2>
-            {/* if there is a resume that is not undefined we want to create a WorkComponent for each element in resume.work */}
-            {resume && resume.work && resume.work.map((job, index) => (
-                <WorkComponent key={index} work={job} />
-            ))}
-
-            <h2>Education</h2>
-
-            {/* if there is a resume that is not undefined we want to create a EducationComponent for each element in resume.education */}
-            {resume && resume.education && resume.education.map((education, index) => (
-                <EducationComponent key={index} education={education} />
-            ))}
-
+        <div className={styles.ScrollContainer}>
+            <div className={styles.Resume}>
+                <h1>Work Experience</h1>
+                <div className={styles.container}>
+                    {workExperience}
+                </div>
+                <h1>Volunteer Experience</h1>
+                <div className={styles.container}>
+                    {volunteerExperience}
+                </div>
+                <h1>Education</h1>
+                <div className={styles.container}>
+                    {education}
+                </div>
+            </div>
         </div>
     )
 }
+
+export default Resume
