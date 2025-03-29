@@ -12,8 +12,7 @@ function Resume() {
     const workExperience = workExperienceData.length ? (
         workExperienceData.map((work) => (
             <div key={work.company} className={styles.Job}>
-                <span>{work.company}</span>
-                <span>{work.title}</span>
+                <span>{work.company}&nbsp;&nbsp;{work.title}</span> {/* Added ':' and tab */}
                 <p>{work.duration.start} - {work.duration.end}</p>
                 <ul>
                     {work.description.map((line, index) => (
@@ -30,8 +29,7 @@ function Resume() {
     const volunteerExperience = volunteerExperienceData.length ? (
         volunteerExperienceData.map((volunteer) => (
             <div key={volunteer.organization} className={styles.Job}>
-                <span>{volunteer.organization}</span>
-                <span>{volunteer.role}</span>
+                <span>{volunteer.organization}&nbsp;&nbsp;{volunteer.role}</span> {/* Added ':' and tab */}
                 <p>{volunteer.duration.start} - {volunteer.duration.end}</p>
                 <ul>
                     {volunteer.description.map((line, index) => (
@@ -48,8 +46,8 @@ function Resume() {
     const education = educationData.length ? (
         educationData.map((edu) => (
             <div key={edu.school} className={styles.EducationInfo}>
-                <span className={styles.SchoolTitle}>{edu.school}</span>
-                <span>{edu.degree}</span>
+                <h2 className={styles.SchoolTitle}>{edu.school}</h2> {/* Changed to <h2> for semantic structure */}
+                <p>{edu.degree}</p> {/* Changed <span> to <p> for better readability */}
                 <p>Finished: {edu.degreefinished}</p>
             </div>
         ))

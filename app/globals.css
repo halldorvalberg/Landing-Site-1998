@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
+html, body {
+  overflow: hidden;
+}
 
 body {
   background-color: black;
@@ -22,17 +25,20 @@ body {
   flex-grow: 1;
   margin: 50px;
   padding: 25px;
+  overflow: hidden;
 }
 
 .Container {
   display: flex; 
   height: 100%;
+  overflow: hidden;
 }
 
 .LeftPannel {
   display: flex;
   flex-direction: column;
   width: 50%;
+  overflow: hidden;
   @media (max-width: 991px) {
     width: 100%;
   }
@@ -43,12 +49,14 @@ body {
   flex-direction: column;
   width: 50%;
   margin-left: 20px;
+  overflow: hidden;
   @media (max-width: 991px) {
     width: 100%;
   }
 }
 
 .TitleContent {
+  overflow: hidden;
   width: 100%;
   display: flex; 
   flex-direction: column;
@@ -63,6 +71,8 @@ body {
   font-weight: 200;
   font-size: 40px;
   letter-spacing: normal;
+  overflow: hidden;
+
 }
 
 #Subtitle {
@@ -72,9 +82,11 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-size: 20px;
+  overflow: hidden;
 }
 
 .ContactInfo {
+  overflow: hidden;
   position: relative;
   height: 200px;
   color: rgba(255, 255, 255, 1);
@@ -84,11 +96,13 @@ body {
 }
 
 .ContactInfo a {
+  overflow: hidden;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 
 .RightPannel {
+  overflow: hidden;
   margin-top: 0;
 }
 

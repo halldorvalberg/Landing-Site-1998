@@ -6,6 +6,9 @@
     line-height: normal;
     color: #FFF;
     margin: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: justify;
 }
 
 .container {
@@ -27,6 +30,11 @@
     line-height: normal;
     color: #FFF;
     margin: 0;
+    text-align: justify;
+}
+
+.SchoolTitle {
+    text-align: left; /* Align school title to the left */
 }
 
 .Job, .EducationInfo {
@@ -37,28 +45,46 @@
     /* We want the gap between span and p to be small
     and the gap between p and p to be big */
     font-size: 14px;
-
+    text-align: justify;
 }
 
-.Job p {
+.EducationInfo {
+    text-align: justify; /* Ensure text is justified */
+    padding-left: 0; /* Align content to the left */
+    align-self: flex-start;
+}
+
+.EducationInfo p {
+    padding-left: 3em;
+}
+
+.SchoolTitle
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Job p, .EducationInfo p {
     font-size: 14px;
     font-weight: 300;
     margin: 5px 0;
     color: #FFF;
+    text-align: justify;
 }
 
-.Job ul {
+.Job ul, .EducationInfo ul {
     margin: 5px 0 10px 20px;
     padding: 0;
     list-style-type: none; /* Remove the * from the list */
 }
 
-.Job ul li {
+.Job ul li, .EducationInfo ul li {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     color: #FFF;
     position: relative;
+    text-align: justify;
 }
 
 .expandButton {
@@ -91,19 +117,4 @@
 
 .ScrollContainer::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
-}
-
-.EducationInfo {
-    /* Remove or adjust padding-left to align with other sections */
-    padding-left: 0;
-    text-align: justify;
-    margin-bottom: 0px;
-    font-size: 14px;
-}
-
-.SchoolTitle {
-    font-weight: 500;
-    font-size: 16px;
-    color: #FFF;
-    margin-bottom: 5px;
 }
