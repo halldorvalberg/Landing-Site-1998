@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
 import Advertisements from './components/Advertisements';
+import AnimatedBackgroundDots from './components/AnimatedBackgroundDots';
 
 export default function Page() {
 
@@ -27,6 +28,7 @@ export default function Page() {
 
   return (
     <div className='HomePage'>
+      <AnimatedBackgroundDots className='BackgroundDots' />
       <div className='MainContent'>
         <div className="Container">
 
