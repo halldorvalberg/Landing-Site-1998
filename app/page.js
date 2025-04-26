@@ -35,7 +35,7 @@ export default function Page() {
           <div className='LeftPannel'>
             <div className='TitleContent'>
               <span id="Title"> Halldór Valberg </span>
-              <p id="Subtitle">App & Web Developer </p>
+              <p id="Subtitle">Full-Stack Developer </p>
             </div>
 
             <div className='Navigation'>
